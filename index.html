@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>kockerpro94 / yousif – Personal Website</title>
+    <meta
+      name="description"
+      content="My name is kockerpro94 / yousif, cybersecurity, roblox studio dev, getting certificates. I have a passion for all things technology and design, from software engineering & machine learning to UI/UX & 3D graphics."
+    />
+
+    <link rel="icon" type="image/png" href="/icon/32x32.png" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="kockerpro94 / yousif – Personal Website"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#f6d4b1" />
+
+    <meta property="og:title" content="kockerpro94 / yousif – Personal Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://edh.dev/" />
+    <meta property="og:image" content="https://edh.dev/icon/og-img1.png" />
+    <meta
+      name="og:description"
+      content="My name is kockerpro94 / yousif, cybersecurity, roblox studio dev, getting certificates. I have a passion for all things technology and design, from software engineering & machine learning to UI/UX & 3D graphics."
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <canvas class="webgl"></canvas>
+
+    <div id="hero-backup">
+      <h3>Hi there, I’m</h3>
+      <h1>kockerpro94 / yousif</h1>
+      <ul>
+        <li>Software Engineer</li>
+        <li>Digital Designer</li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" onclick="toggleMenu()">
+          <svg width="16" height="16">
+            <rect class="st0" width="16" height="3.2" />
+            <rect y="6.4" class="st0" width="16" height="3.2" />
+            <rect y="12.8" class="st0" width="16" height="3.2" />
+          </svg>
+        </button>
+        <div style="display: flex">
+          <button class="btn" onclick="cycleTheme()" style="margin-right: 16px;">
+            CRT: Amber
+          </button>
+            </svg>
+          </a>
+          <a
+            class="btn"
+            href="https://github.com/Kockerpro94"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M10.6,12.9c0-1-0.3-1.6-0.7-2c2.4-0.3,4.9-1.1,4.9-5.2c0-1.1-0.4-2.1-1.1-2.9c0.1-0.3,0.5-1.3-0.1-2.8
+                c0,0-0.9-0.3-3,1.1c-1.7-0.5-3.6-0.5-5.4,0c-2-1.4-3-1.1-3-1.1C1.6,1.4,2,2.5,2.1,2.8C1.4,3.5,1,4.6,1,5.6c0,4.1,2.5,5,4.9,5.3
+                c-0.4,0.4-0.6,0.9-0.7,1.4c-0.6,0.3-2.2,0.7-3.1-0.9c0,0-0.6-1-1.6-1.1c0,0-1.1,0-0.1,0.7c0,0,0.7,0.3,1.1,1.6c0,0,0.6,2.1,3.6,1.5
+                c0,0.9,0,1.8,0,1.8h5.3C10.6,15.9,10.6,14.4,10.6,12.9z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-body" onclick="closeMenu()">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#aboutMe" onclick="closeMenu()">About</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section>
+        <h1 id="aboutMe">Hi there</h1>
+        <p>
+          My name is kockerpro94 / yousif, cybersecurity, roblox studio dev, getting certificates. I have a passion for all
+          things technology and design, from software engineering & machine
+          learning to UI/UX & 3D graphics.
+        </p>
+        <p>
+          In addition to my love of technology and design, I am also interested
+          in education, history, economics and politics.
+        </p>
+      </section>
+
+      <section>
+        <h1>Sword System</h1>
+        <div class="project-container">
+          <div class="project-video-wrapper">
+            <video src="/images/system1.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="project-description">
+            <p>
+              advanced sword system, with a 3d gui. and the gui if you move 10 stud away it's automatic vanish
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1>System 2</h1>
+        <div class="project-container">
+          <div class="project-video-wrapper">
+            <video src="/images/System2.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="project-description">
+            <p>
+             Super Advanced Data Store System
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1 id="contact">Contact</h1>
+        <p style="text-align: center">
+          Reach out on Discord
+        </p>
+      </section>
+    </main>
+
+    <input type="text" id="textarea" readonly />
+    <div id="loading">
+      <h2>Booting...</h2>
+      <div id="loading-bar">
+        <div id="loading-bar-progress"></div>
+      </div>
+      <div id="loading-items">Starting...</div>
+      <div style="margin-top: 10px; font-size: 0.8em; opacity: 0.8;">Note: First load downloads a 96MB 3D model. This may take a minute...</div>
+    </div>
+    <footer>
+      <div>Developed + Designed by kockerpro94 / yousif.</div>
+      <div>Computer design based on the Commodore PET 8296.</div>
+      <div>
+        Built on the traditional land of the Wurundjeri and Boon Wurrung peoples
+        of the Kulin nation. I pay my respect to Elders past, present and
+        emerging.
+      </div>
+      <div>
+        Sovereignty has never been ceded. It always was and always will be
+        Aboriginal land.
+      </div>
+      <div>COPYRIGHT © 2022-2024 kockerpro94 / yousif.</div>
+    </footer>
+    <script>
+      function closeMenu() {
+        document.getElementsByTagName("nav")[0].classList.remove(["active"]);
+      }
+
+      function toggleMenu() {
+        const nav = document.getElementsByTagName("nav")[0];
+        if (nav.classList.contains("active")) {
+          nav.classList.remove(["active"]);
+        } else {
+          nav.classList.add("active");
+        }
+      }
+      let currentTheme = "amber";
+      const themes = ["amber", "green", "blue"];
+
+      function cycleTheme() {
+        const currentIndex = themes.indexOf(currentTheme);
+        const nextTheme = themes[(currentIndex + 1) % themes.length];
+        
+        document.documentElement.setAttribute('data-theme', nextTheme);
+        currentTheme = nextTheme;
+        
+        event.target.innerText = `CRT: ${nextTheme.charAt(0).toUpperCase() + nextTheme.slice(1)}`;
+        
+        // Dispatch an event so WebGL can update the material
+        window.dispatchEvent(new CustomEvent('themeChanged', { detail: nextTheme }));
+      }
+    </script>
+    <script
+      fetchpriority="high"
+      src="https://cdn-ts.netlify.app/webgl-helper@3.0.11/webgl-helper.min.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EDNKHGV4HB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-EDNKHGV4HB");
+      gtag("event", "origin", { name: window.origin });
+    </script>
+  </body>
+</html>
