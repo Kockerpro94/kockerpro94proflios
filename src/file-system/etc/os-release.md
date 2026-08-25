@@ -1,0 +1,7 @@
+NAME="RetroOS"
+VERSION="1.0"
+ID="retroos"
+PRETTY_NAME="RetroOS 1.0 LTS"
+HOME_URL="https://retroos.local/"
+SUPPORT_URL="https://retroos.local/support"
+BUG_REPORT_URL="https://retroos.local/bugs"
